@@ -24,7 +24,7 @@ const processResponse = (req, res) => {
     });
   } else if (req.body.data == "message") {
     sendWatsonMessage(req, res);
-  } else if (req.body.providers || req.body.data == "providers") {
+  } else if (req.body.providers) {
     console.log("has providers");
     getProviders(req, res);
   } else {
@@ -71,8 +71,6 @@ const sendWatsonMessage = async (req, res) => {
   axios
     .request(config)
     .then((response) => {
-      console.log("response: ", JSON.stringify(response.data));
-
       res.send({ status: "successful", data: response.data });
     })
     .catch((error) => {
@@ -83,6 +81,8 @@ const sendWatsonMessage = async (req, res) => {
 };
 
 const getProviders = (req, res) => {
+  //mocks database call to retrieve providers
+
   const data = {
     providers: [
       {
