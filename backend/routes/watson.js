@@ -11,15 +11,18 @@ const watsonSkillID = process.env.WATSON_SKILL_ID;
 //Endpoint to process Watson assistant webhook calls
 
 router.post("/processResponse", function (req, res, next) {
+  //routes calls from iOS app and IBM Watson Assistant webhook
   processResponse(req, res);
 });
 
 const processResponse = (req, res) => {
-  console.log("body", req.body);
-
   if (req.body.data == "message") {
+    // handles iOS message api call
+
     sendWatsonMessage(req, res);
   } else if (req.body.providers) {
+    // handles Watson webhook api call for providers info
+
     getProviders(req, res);
   } else {
     console.log("no params");
