@@ -20,7 +20,6 @@ const processResponse = (req, res) => {
   if (req.body.data == "message") {
     sendWatsonMessage(req, res);
   } else if (req.body.providers) {
-    console.log("has providers");
     getProviders(req, res);
   } else {
     console.log("no params");
@@ -37,8 +36,6 @@ const processResponse = (req, res) => {
 };
 
 const sendWatsonMessage = async (req, res) => {
-  console.log("req.body: ", req.body);
-
   var data = {
     input: {
       text: req.body.userMessage,
@@ -46,7 +43,6 @@ const sendWatsonMessage = async (req, res) => {
   };
 
   if (req.body.context) {
-    console.log("has context");
     data.context = req.body.context;
   }
 
