@@ -36,4 +36,3 @@ A proof-of-concept Conversational AI Chatbot Application built for CVS Health, d
 - Xcode 15+ (for SwiftUI app)
 - Node.js 18+
 - IBM Watson Assistant instance + API Key
-- Ngrok (for local backend testing from mobile)
