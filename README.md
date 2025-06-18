@@ -12,7 +12,7 @@ A proof-of-concept Conversational AI Chatbot Application built for CVS Health, d
 - Chat interface with user-bot messaging
 - Auto-scroll, dynamic response handling
 - Supports Watson context chaining
-- “Click to view” interaction navigates to a list of pediatricians
+- “Click to view” interaction navigates to a list of providers
 
 ### 2. 🌐 Node.js Backend
 
@@ -21,9 +21,9 @@ A proof-of-concept Conversational AI Chatbot Application built for CVS Health, d
 - Custom logic to detect intents and dynamically inject provider data
 - Supports response chaining and disambiguation
 
-### 3. 📊 Fold Testing Data (Screenshots)
+### 3. 📊 K-Fold Testing Data (Screenshots)
 
-- Located in `screenshots/` folder
+- Located in `screenshots/kfold` folder
 - Contains annotated training data and screenshots of fold-based testing for intent quality
 - Used during Watson Assistant tuning and validation
 
