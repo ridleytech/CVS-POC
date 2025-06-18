@@ -17,12 +17,7 @@ router.post("/processResponse", function (req, res, next) {
 const processResponse = (req, res) => {
   console.log("body", req.body);
 
-  if (req.body.messageTest) {
-    res.send({
-      status: "success",
-      data: "Webhook successful",
-    });
-  } else if (req.body.data == "message") {
+  if (req.body.data == "message") {
     sendWatsonMessage(req, res);
   } else if (req.body.providers) {
     console.log("has providers");
