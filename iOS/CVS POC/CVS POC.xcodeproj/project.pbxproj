@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		33FF16682E02671A0083A4DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FF16672E02671A0083A4DC /* LaunchScreen.storyboard */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		3325AA142E021C32007012AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -31,7 +27,6 @@
 		3325AA032E021C30007012AA /* CVS POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CVS POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3325AA132E021C32007012AA /* CVS POCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CVS POCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3325AA1D2E021C32007012AA /* CVS POCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CVS POCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		33FF16672E02671A0083A4DC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -80,7 +75,6 @@
 		3325A9FA2E021C30007012AA = {
 			isa = PBXGroup;
 			children = (
-				33FF16672E02671A0083A4DC /* LaunchScreen.storyboard */,
 				3325AA052E021C30007012AA /* CVS POC */,
 				3325AA162E021C32007012AA /* CVS POCTests */,
 				3325AA202E021C32007012AA /* CVS POCUITests */,
@@ -218,7 +212,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33FF16682E02671A0083A4DC /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
